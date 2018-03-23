@@ -124,7 +124,7 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background: url("../img/mt-rainier-bg.png") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -143,6 +143,7 @@ a:focus, a:hover {
 
 .masthead .intro-body .intro-text {
   font-size: 18px;
+  text-shadow: 2px 2px #000;
 }
 
 @media (min-width: 768px) {
@@ -184,9 +185,9 @@ a:focus, a:hover {
   padding-bottom: 150px;
 }
 
-.download-section {
+.contact-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background: url("../img/lake-jordan-bg.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -280,4 +281,30 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.light {
+  font-weight: 400;
+}
+
+.work__img--border {
+  border: 2px solid #FFF;
+}
+
+.work__img--shadow {
+  box-shadow: 2px 2px 2px #000;
+}
+
+.work__text {
+  text-shadow: 1px 1px #000;
+}
+
+hr {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
 }
