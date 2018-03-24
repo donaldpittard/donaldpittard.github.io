@@ -187,7 +187,7 @@ a:focus, a:hover {
 
 .contact-section {
   color: white;
-  background: url("../img/lake-jordan-bg.jpg") no-repeat center center scroll;
+  /*background: url('../img/lake-jordan-bg.jpg') no-repeat center center scroll;*/
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -287,6 +287,25 @@ img::-moz-selection {
   font-weight: 400;
 }
 
+.work__img {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.work__img--luxafor {
+  background: url("../img/luxafor.jpeg") no-repeat center;
+}
+
+.work__img--stephs-notes {
+  background: url("../img/sticky-notes-app.png") no-repeat center;
+}
+
 .work__img--border {
   border: 2px solid #FFF;
 }
@@ -297,12 +316,21 @@ img::-moz-selection {
 
 .work__text {
   text-shadow: 1px 1px #000;
+  padding: 1em;
 }
 
-hr {
+.work__text--align-left {
+  text-align: left;
+}
+
+.work__text--padding-left {
+  padding-left: 4.5em;
+}
+
+.work__separator {
   display: block;
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin-top: 10em;
+  margin-bottom: 10em;
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
