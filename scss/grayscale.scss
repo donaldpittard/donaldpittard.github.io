@@ -1,7 +1,8 @@
-@import 'variables.scss';
-@import 'mixins.scss';
+@import "variables.scss";
+@import "mixins.scss";
+
 body {
-  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   position: relative;
 
@@ -23,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 
   margin: 0 0 35px;
@@ -37,7 +38,7 @@ p {
   line-height: 1.5;
 
   margin: 0 0 25px;
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 18px;
     line-height: 1.6;
 
@@ -59,14 +60,18 @@ a {
   }
 }
 
+.color-white {
+  color: white;
+}
+
 #mainNav {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   margin-bottom: 0;
 
   text-transform: uppercase;
 
-  border-bottom: 1px solid fade-out(white, .7);
+  border-bottom: 1px solid fade-out(white, 0.7);
   background-color: black;
   .navbar-toggler {
     font-size: 14px;
@@ -99,13 +104,16 @@ a {
       }
     }
   }
-  @media(min-width:992px) {
+  @media (min-width: 992px) {
     padding-top: 20px;
     padding-bottom: 20px;
 
-    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -webkit-transition: background 0.3s ease-in-out,
+      padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out,
+      padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out,
+      padding-bottom 0.3s;
     letter-spacing: 1px;
 
     border-bottom: none;
@@ -114,12 +122,12 @@ a {
       padding-top: 10px;
       padding-bottom: 10px;
 
-      border-bottom: 1px solid fade-out(white, .7);
+      border-bottom: 1px solid fade-out(white, 0.7);
       background: black;
     }
     .nav-link.active {
       outline: none;
-      background-color: rgba(white, .3);
+      background-color: rgba(white, 0.3);
       &:hover {
         color: white;
       }
@@ -137,7 +145,7 @@ a {
   text-align: center;
 
   color: white;
-  background: url('../img/mt-rainier-bg.png') no-repeat bottom center scroll;
+  background: url("../img/mt-rainier-bg.png") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -155,7 +163,7 @@ a {
       text-shadow: 2px 2px #000;
     }
   }
-  @media(min-width:768px) {
+  @media (min-width: 768px) {
     height: 100%;
     padding: 0;
     .intro-body {
@@ -189,18 +197,16 @@ a {
   &:hover {
     color: white;
     outline: none;
-    background: fade-out(white, .9);
+    background: fade-out(white, 0.9);
   }
 }
 
 .content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 10em;
 }
 
 .contact-section {
   color: white;
-  /*background: url('../img/lake-jordan-bg.jpg') no-repeat center center scroll;*/
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -212,18 +218,14 @@ a {
   width: 100%;
   height: 300px;
 }
-@media(min-width:992px) {
-  .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+@media (min-width: 992px) {
   #map {
     height: 350px;
   }
 }
 
 .btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
 
   -webkit-transition: all 0.3s ease-in-out;
@@ -249,10 +251,10 @@ a {
 
 ul.banner-social-buttons {
   margin-top: 0;
-  @media(max-width: 1199px) {
+  @media (max-width: 1199px) {
     margin-top: 15px;
   }
-  @media(max-width:767px) {
+  @media (max-width: 767px) {
     li {
       display: block;
 
@@ -276,13 +278,13 @@ footer {
 
 ::-moz-selection {
   background: #fcfcfc;
-  background: fade-out(white, .8);
+  background: fade-out(white, 0.8);
   text-shadow: none;
 }
 
 ::selection {
   background: #fcfcfc;
-  background: fade-out(white, .8);
+  background: fade-out(white, 0.8);
   text-shadow: none;
 }
 
@@ -313,12 +315,12 @@ img::-moz-selection {
   background: url("../img/luxafor.jpeg") no-repeat center;
 }
 
-.work__img--stephs-notes{
+.work__img--stephs-notes {
   background: url("../img/sticky-notes-app.png") no-repeat center;
 }
 
 .work__img--border {
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
 }
 
 .work__img--shadow {
@@ -330,7 +332,7 @@ img::-moz-selection {
   padding: 1em;
 }
 
-.work__text--align-left{
+.work__text--align-left {
   text-align: left;
 }
 
@@ -342,7 +344,7 @@ img::-moz-selection {
   padding-right: 4.5em;
 }
 
-.work__separator { 
+.work__separator {
   display: block;
   margin-top: 10em;
   margin-bottom: 10em;
@@ -351,3 +353,5 @@ img::-moz-selection {
   border-style: inset;
   border-width: 1px;
 }
+
+@import "hero.scss";
