@@ -12803,3 +12803,66 @@ h6,
 .social-icons .social-icon {
   background-color: #14213d;
 }
+
+.case-study-list {
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.case-study {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.28fr) minmax(0, 1fr) minmax(12rem, 0.55fr);
+  align-items: start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.case-study-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.case-study-result {
+  color: var(--bs-primary);
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.case-study .subheading {
+  color: var(--bs-primary);
+  font-size: 1rem;
+}
+
+@media (max-width: 1199.98px) {
+  .case-study {
+    grid-template-columns: minmax(10rem, 0.35fr) minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  .case-study-image {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .case-study-result {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .case-study {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .case-study-image {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
